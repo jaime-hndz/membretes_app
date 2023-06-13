@@ -1,0 +1,17 @@
+D:\Apps\MembretesApp\MembretesApp\bin\Debug\net6.0\MembretesApp.exe
+D:\Apps\MembretesApp\MembretesApp\bin\Debug\net6.0\MembretesApp.deps.json
+D:\Apps\MembretesApp\MembretesApp\bin\Debug\net6.0\MembretesApp.runtimeconfig.json
+D:\Apps\MembretesApp\MembretesApp\bin\Debug\net6.0\MembretesApp.dll
+D:\Apps\MembretesApp\MembretesApp\bin\Debug\net6.0\MembretesApp.pdb
+D:\Apps\MembretesApp\MembretesApp\obj\Debug\net6.0\MembretesApp.csproj.AssemblyReference.cache
+D:\Apps\MembretesApp\MembretesApp\obj\Debug\net6.0\MembretesApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\Apps\MembretesApp\MembretesApp\obj\Debug\net6.0\MembretesApp.AssemblyInfoInputs.cache
+D:\Apps\MembretesApp\MembretesApp\obj\Debug\net6.0\MembretesApp.AssemblyInfo.cs
+D:\Apps\MembretesApp\MembretesApp\obj\Debug\net6.0\MembretesApp.csproj.CoreCompileInputs.cache
+D:\Apps\MembretesApp\MembretesApp\obj\Debug\net6.0\MembretesApp.dll
+D:\Apps\MembretesApp\MembretesApp\obj\Debug\net6.0\refint\MembretesApp.dll
+D:\Apps\MembretesApp\MembretesApp\obj\Debug\net6.0\MembretesApp.pdb
+D:\Apps\MembretesApp\MembretesApp\obj\Debug\net6.0\MembretesApp.genruntimeconfig.cache
+D:\Apps\MembretesApp\MembretesApp\obj\Debug\net6.0\ref\MembretesApp.dll
+D:\Apps\MembretesApp\MembretesApp\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\Apps\MembretesApp\MembretesApp\obj\Debug\net6.0\MembretesApp.csproj.CopyComplete
