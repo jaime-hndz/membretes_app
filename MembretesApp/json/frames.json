@@ -1,0 +1,10 @@
+{
+  "frames": [
+    {
+      "name": "standar",
+      "borderY": "|",
+      "borderX": "-",
+      "corner":  "+"
+    }
+  ]
+}

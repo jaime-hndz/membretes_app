@@ -1,4 +1,4 @@
-﻿namespace MembretesApp
+﻿namespace MembretesApp.entity
 {
     public class lettersSet
     {
