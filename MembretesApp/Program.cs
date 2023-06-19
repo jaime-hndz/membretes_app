@@ -53,22 +53,47 @@ for(int i = 0; i < lineas.Length; i++)
 {
     if (i == 0 || i == 6)
     {
-        lineas[i] = fra.corner + fra.borderX + lineas[i] + fra.borderX + fra.corner + "\n";
+        lineas[i] = fra.corner + fra.borderX + lineas[i] + fra.borderX + fra.corner;
     }
     else
     {
-        lineas[i] = fra.borderY + " " + lineas[i] + " " + fra.borderY + "\n";
+        lineas[i] = fra.borderY + " " + lineas[i] + " " + fra.borderY;
     }
     
 }
 
+
 foreach (var linea in lineas)
 {
-    msg_codificado += linea;
+    msg_codificado += linea + "\n";
 }
 
+string msg_to_file = "";
 
+foreach (var linea in lineas)
+{
+    string nuevaLinea = string.Empty;
+    foreach (var letra in linea)
+    {
+        if (letra == '\\')
+        {
+            nuevaLinea += letra.ToString() + letra.ToString();
+        }
+        else
+        {
+            nuevaLinea += letra.ToString();
+        }
+    }
+    msg_to_file += "cout<<\"" + nuevaLinea + "\"<<endl;\n";
+}
+
+TextCopy.ClipboardService.SetText(msg_to_file);
 Console.WriteLine(msg_codificado);
+
+StreamWriter sw = new StreamWriter("membrete.txt");
+sw.WriteLine(msg_to_file);
+
+sw.Close();
 
 Console.Write("\nPresiona cualquier tecla para continuar...");
 Console.ReadKey();
