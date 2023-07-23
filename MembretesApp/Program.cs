@@ -1,22 +1,23 @@
-﻿using MembretesApp.entity;
-using Newtonsoft.Json;
+﻿using MembretesApp;
 
-string rutaArchivoJson = "json\\letters.json";
-string json = File.ReadAllText(rutaArchivoJson);
-lettersSet? letterset = JsonConvert.DeserializeObject<lettersSet>(json);
+string? opt = "0";
 
-string rutaArchivoJson2 = "json\\frames.json";
-string json2 = File.ReadAllText(rutaArchivoJson2);
-framesSet? framesSet = JsonConvert.DeserializeObject<framesSet>(json2);
+while(opt != "99")
+{
+    Console.Clear();
 
-frame fra = framesSet.frames.First();
 
-Console.WriteLine("Ingresa un mensaje:");
-var msg = Console.ReadLine();
-string msg_codificado = Functions.CodificarMensaje(msg, letterset, fra);
+    opt = Menus.OptionsMenu();
 
-Console.WriteLine(msg_codificado);
-Functions.GuardarMensajeEnArchivo(msg_codificado);
+    switch (opt)
+    {
+        case "1":
+            Screens.MembreteScreen();
+            break;
+        case "2":
+            break;
+        default:
+            break;
+    }
 
-Console.Write("\nPresiona cualquier tecla para continuar...");
-Console.ReadKey();
+}
