@@ -8,7 +8,7 @@ namespace MembretesApp
 {
     internal class Menus
     {
-        public static string? OptionsMenu()
+        public static string? MenuOpciones()
         {
             Console.WriteLine("\n1. Escribir un membrete");
             Console.WriteLine("2. Cambiar el marco");
@@ -19,7 +19,7 @@ namespace MembretesApp
             return Console.ReadLine();
         }
 
-        public static string? EndMenu()
+        public static string? MenuFinal()
         {
             Console.WriteLine("\n1. Copiar diseño");
             Console.WriteLine("2. Exportar en txt");

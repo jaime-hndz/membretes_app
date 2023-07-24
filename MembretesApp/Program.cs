@@ -4,10 +4,9 @@ string? opt = "0";
 
 while(opt != "99")
 {
-    Console.Clear();
+    Screens.MembreteTitulo();
 
-
-    opt = Menus.OptionsMenu();
+    opt = Menus.MenuOpciones();
 
     switch (opt)
     {

@@ -6,6 +6,19 @@ namespace MembretesApp
     public class Screens
     {
         private static string _frameIndex = "1";
+
+        public static void MembreteTitulo()
+        {
+            Console.Clear();
+            Console.WriteLine("+-------------------------------------------------------------------+");
+            Console.WriteLine("|  __  __  _____  __  __  ____   ____   _____  _____  _____  ____   |");
+            Console.WriteLine("| |  \\/  || ____||  \\/  || __ ) |  _ \\ | ____||_   _|| ____|/ ___|  |");
+            Console.WriteLine("| | |\\/| ||  _|  | |\\/| ||  _ \\ | |_) ||  _|    | |  |  _|  \\___ \\  |");
+            Console.WriteLine("| | |  | || |___ | |  | || |_) ||  _ < | |___   | |  | |___  ___) | |");
+            Console.WriteLine("| |_|  |_||_____||_|  |_||____/ |_| \\_\\|_____|  |_|  |_____||____/  |");
+            Console.WriteLine("+-------------------------------------------------------------------+");
+
+        }
         public static void MembreteScreen()
         {
             Console.Clear();
@@ -25,7 +38,7 @@ namespace MembretesApp
 
             Console.WriteLine(msg_codificado);
 
-            Functions.SetEndMenu(msg_codificado);
+            Functions.ConfigurarMenuFinal(msg_codificado);
 
 
             Console.Write("\nPresiona cualquier tecla para continuar...");

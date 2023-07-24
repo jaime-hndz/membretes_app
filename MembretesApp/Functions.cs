@@ -73,7 +73,7 @@ public class Functions
                     nuevaLinea += letra.ToString();
                 }
             }
-            msg_to_file += "cout<<\"" + nuevaLinea + "\"<<endl;\n";
+            msg_to_file += "Console.WriteLine(\"" + nuevaLinea + "\");\n";
         }
         return msg_to_file;
     }
@@ -89,18 +89,19 @@ public class Functions
         }
     }
 
-    public static void SetEndMenu(string msg)
+    public static void ConfigurarMenuFinal(string msg)
     {
         string? opt = "0";
 
         while (opt != "99") {
-            opt = Menus.EndMenu();
+            opt = Menus.MenuFinal();
 
             switch (opt)
             {
                 case "1":
                     Functions.CopiarMensaje(msg);
                     Console.WriteLine("mensaje copiado!");
+                    
                     break;
                 case "2":
                     Functions.GuardarMensajeEnArchivo(msg);
