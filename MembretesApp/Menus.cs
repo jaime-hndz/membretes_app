@@ -18,5 +18,17 @@ namespace MembretesApp
 
             return Console.ReadLine();
         }
+
+        public static string? EndMenu()
+        {
+            Console.WriteLine("\n1. Copiar diseño");
+            Console.WriteLine("2. Exportar en txt");
+            Console.WriteLine("3. Guardar como diseño para apliacion de consola");
+            Console.WriteLine("\n99. Salir");
+
+            Console.Write("\n---->");
+
+            return Console.ReadLine();
+        }
     }
 }

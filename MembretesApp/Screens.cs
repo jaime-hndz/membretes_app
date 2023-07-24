@@ -7,6 +7,7 @@ namespace MembretesApp
     {
         public static void MembreteScreen()
         {
+            Console.Clear();
             string rutaArchivoJson = "json\\letters.json";
             string json = File.ReadAllText(rutaArchivoJson);
             lettersSet? letterset = JsonConvert.DeserializeObject<lettersSet>(json);
@@ -22,7 +23,9 @@ namespace MembretesApp
             string msg_codificado = Functions.CodificarMensaje(msg, letterset, fra);
 
             Console.WriteLine(msg_codificado);
-            Functions.GuardarMensajeEnArchivo(msg_codificado);
+
+            Functions.SetEndMenu(msg_codificado);
+
 
             Console.Write("\nPresiona cualquier tecla para continuar...");
             Console.ReadKey();
