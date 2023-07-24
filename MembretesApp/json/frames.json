@@ -1,10 +1,18 @@
 {
   "frames": [
     {
+      "index": "1",
       "name": "standar",
       "borderY": "|",
       "borderX": "-",
-      "corner":  "+"
+      "corner": "+"
+    },
+    {
+      "index": "2",
+      "name": "standar2",
+      "borderY": "||",
+      "borderX": "=",
+      "corner": "()"
     }
   ]
 }
