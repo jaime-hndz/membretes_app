@@ -1,0 +1,6 @@
+@MembretesAPI_HostAddress = http://localhost:5023
+
+GET {{MembretesAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

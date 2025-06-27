@@ -7,17 +7,25 @@ public class Functions
 
     public static string ObtenerMensaje(string mensaje)
     {
-        string rutaArchivoJson = "json\\letters.json";
-        string json = File.ReadAllText(rutaArchivoJson);
-        lettersSet? letterset = JsonConvert.DeserializeObject<lettersSet>(json);
+        try
+        {
+            string rutaArchivoJson = "json/letters.json";
+            string json = File.ReadAllText(rutaArchivoJson);
+            lettersSet? letterset = JsonConvert.DeserializeObject<lettersSet>(json);
 
-        string rutaArchivoJson2 = "json\\frames.json";
-        string json2 = File.ReadAllText(rutaArchivoJson2);
-        framesSet? framesSet = JsonConvert.DeserializeObject<framesSet>(json2);
+            string rutaArchivoJson2 = "json/frames.json";
+            string json2 = File.ReadAllText(rutaArchivoJson2);
+            framesSet? framesSet = JsonConvert.DeserializeObject<framesSet>(json2);
 
-        frame fra = framesSet.frames.Where(f => f.index == "1").First();
+            frame fra = framesSet.frames.Where(f => f.index == "1").First();
 
-        return CodificarMensaje(mensaje, letterset, fra);
+            return CodificarMensaje(mensaje, letterset, fra);
+        }
+        catch (Exception e)
+        {
+            return e.Message;
+        }
+
     }
     public static string CodificarMensaje(string mensaje, lettersSet? letterset, frame frame)
     {
@@ -65,12 +73,6 @@ public class Functions
         return msg_codificado;
     }
 
-    public static void CopiarMensaje(string msg)
-    {
-        TextCopy.ClipboardService.SetText(msg);
-
-    }
-
     public static string ConvertirParaExportarConsola(string msg, int? type = 0)
     {
         string msg_to_file = "";
@@ -105,33 +107,5 @@ public class Functions
         }
     }
 
-    public static void ConfigurarMenuFinal(string msg)
-    {
-        string? opt = "0";
-
-        while (opt != "99") {
-            opt = Menus.MenuFinal();
-
-            switch (opt)
-            {
-                case "1":
-                    Functions.CopiarMensaje(msg);
-                    Console.WriteLine("mensaje copiado!");
-                    
-                    break;
-                case "2":
-                    Functions.GuardarMensajeEnArchivo(msg);
-                    Console.WriteLine("mensaje guardado en membrete.txt!");
-                    break;
-                case "3":
-                    msg = ConvertirParaExportarConsola(msg);
-                    Console.WriteLine("mensaje convertido para consola!");
-                    break;
-                default:
-                    break;
-            }
-
-        }
-    }
 }
 

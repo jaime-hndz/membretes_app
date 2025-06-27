@@ -5,6 +5,10 @@ VisualStudioVersion = 17.3.32804.467
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MembretesApp", "MembretesApp\MembretesApp.csproj", "{1F2B2763-926F-4389-BC00-2F91CDCE90F1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MembretesAPI", "MembretesAPI\MembretesAPI.csproj", "{AB9D04CF-8F87-47B7-8813-6F6DC2B132B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MembretesApp.Core", "MembretesApp.Core\MembretesApp.Core.csproj", "{8779A6FB-A65F-48AE-B097-66F064D450DE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{1F2B2763-926F-4389-BC00-2F91CDCE90F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F2B2763-926F-4389-BC00-2F91CDCE90F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F2B2763-926F-4389-BC00-2F91CDCE90F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB9D04CF-8F87-47B7-8813-6F6DC2B132B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB9D04CF-8F87-47B7-8813-6F6DC2B132B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB9D04CF-8F87-47B7-8813-6F6DC2B132B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB9D04CF-8F87-47B7-8813-6F6DC2B132B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8779A6FB-A65F-48AE-B097-66F064D450DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8779A6FB-A65F-48AE-B097-66F064D450DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8779A6FB-A65F-48AE-B097-66F064D450DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8779A6FB-A65F-48AE-B097-66F064D450DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
